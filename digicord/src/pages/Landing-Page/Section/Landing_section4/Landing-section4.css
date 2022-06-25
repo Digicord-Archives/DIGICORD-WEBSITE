@@ -10,7 +10,7 @@ html, body {
   background-color: #F8F9F9;
   position: absolute;
   padding: 2em 5em 3em 5em;
-  margin: 1em 0 1em 0;
+  margin: 0em 0 0em 0;
 }
 
 .section-container {
@@ -18,8 +18,8 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 97%;
   height: 398px;
   margin: 0;
