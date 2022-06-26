@@ -97,8 +97,14 @@
 }
 
 @media screen and (max-width: 900px) {
+  .one {
+    display: none;
+  }
   .two {
     flex-wrap: wrap;
+  }
+  .footer__copyright-section {
+    padding: 1rem 2.5rem;
   }
 }
 
@@ -106,5 +112,12 @@
   .two {
     flex-direction: column;
     padding: 1rem 1.5rem;
+  }
+
+  .footer__copyright-section {
+    padding: 1rem 1.5rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
   }
 }
