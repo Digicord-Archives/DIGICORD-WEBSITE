@@ -8,7 +8,7 @@ html, body {
   width: 88%;
   height: 860px;
   background-color: #F8F9F9;
-  position: absolute;
+  /* position: absolute; */
   padding: 2em 5em 3em 5em;
   margin: 0em 0 0em 0;
 }
