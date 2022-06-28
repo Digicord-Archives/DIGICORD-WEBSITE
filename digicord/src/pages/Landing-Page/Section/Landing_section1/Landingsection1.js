@@ -5,7 +5,7 @@ import pic1 from '../../../../assets/images/pic1.png';
 const Landingsection1 = () => {
   return (
     <>
-      <Container className='container' sytle={{background:'#f6fdff'}}>
+      <Container className='container' sytle={{background:'#E4FEEF'}}>
         <Row className='sm' style={{display:'flex'}}>
           <Col>
             <div className='lhs'>
