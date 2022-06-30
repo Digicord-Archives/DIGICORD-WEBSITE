@@ -1,7 +1,7 @@
 import React from 'react';
 import {Col, Row, Button, Container} from 'react-bootstrap'
 
-const Landing_section6 = () => {
+const Landingsection6 = () => {
   return (
     <>
       <Container className='container'>
@@ -19,4 +19,4 @@ const Landing_section6 = () => {
   )
 }
 
-export default Landing_section6
+export default Landingsection6

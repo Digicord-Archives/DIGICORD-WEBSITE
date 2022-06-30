@@ -9,7 +9,7 @@ const Landingsection1 = () => {
       {/* <Container className='container'>
         <Row className='sm' style={{display:'flex',background:'#E4FEEF'}}>
 ======= */}
-      <Container className='container' sytle={{background:'#E4FEEF'}}>
+      <Container className='container' sytle={{backgroundColor:'#E4FEEF', margin: '0px'}}>
         <Row className='sm' style={{display:'flex'}}>
 {/* >>>>>>> 0a25566310d29fdf06edfdae55d659f8b612a3bc */}
           <Col>
