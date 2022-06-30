@@ -6,14 +6,16 @@ import Landingsection4 from '../Section/Landing_section4/Landingsection4';
 import Landingsection5 from '../Section/Landing_section5/Landingsection5';
 import { Container } from 'react-bootstrap';
 import './Landing.css';
+import Landing_section6 from '../Section/Landing_section6/Landing_section6';
 
 const Landing = () => {
   return (
    <Container>
       <Landingsection1/>
       <Landingsection2/>
-      <Landingsection3/>
+      <Landing_section6/>
       <Landingsection4/>
+      <Landingsection3/>
       <Landingsection5/>
    </Container>
   )
