@@ -5,8 +5,8 @@ import pic1 from '../../../../assets/images/pic1.png';
 const Landingsection1 = () => {
   return (
     <>
-      <Container className='container' sytle={{background:'#f6fdff'}}>
-        <Row className='sm' style={{display:'flex'}}>
+      <Container className='container'>
+        <Row className='sm' style={{display:'flex',background:'#E4FEEF'}}>
           <Col>
             <div className='lhs'>
               <h2>A Better Way To Book <br /><span style={{color:'#09017E'}}>Appointments</span> And Stay <br />Connected With <span style={{color:'#09017E'}}>Doctors</span></h2>
