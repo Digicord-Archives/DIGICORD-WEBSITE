@@ -9,7 +9,7 @@ const Landingsection6 = () => {
           <Col>
             <div className='text'>
               <h2 style={{color:'#09017E'}}>See How Digicord Is Making Doctors And <br /> Patients Lives Easier</h2>
-              <Button href='/' className='btn'>Watch Video</Button>
+              <Button href='/#' className='btn'>Watch Video</Button>
             </div>
           </Col>
           </Row>
