@@ -1,11 +1,14 @@
 header {
-  width: 100vw;
+  width: 98.75vw;
+  margin: 0;
+  padding: 0;
 }
 
 header * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background-color:#E4FEEF; */
 }
 
 .navbar {
@@ -16,7 +19,11 @@ header * {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 8rem;
+  padding: 2rem 8rem  2rem 8rem;
+  margin: 0;
+  background-color:#E4FEEF;
+  /* border: 1px solid blue; */
+
 }
 
 .logo-wrapper {

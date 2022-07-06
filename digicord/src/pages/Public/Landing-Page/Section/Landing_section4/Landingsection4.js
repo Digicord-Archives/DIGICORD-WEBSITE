@@ -1,7 +1,7 @@
 import React from 'react';
 import './Landing-section4.css';
-import Doctor from '../../../../assets/images/doctor.png';
-import Patient from '../../../../assets/images/patient.png';
+import Doctor from '../../../../../assets/images/doctor.png';
+import Patient from '../../../../../assets/images/patient.png';
 
 
 const Landingsection4 = () => {
