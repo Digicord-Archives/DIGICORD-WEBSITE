@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,EAAE,IAAI,CAAC;EACT,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX",
+    "mappings": "AAAA,AAAA,IAAI,EAAE,IAAI,CAAC;EACT,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EAEV,KAAK,EAAE,OAAO;CACf",
     "sources": [
         "Landing.scss"
     ],

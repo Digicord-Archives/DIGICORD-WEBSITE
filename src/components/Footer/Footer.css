@@ -1,9 +1,10 @@
 .footer {
   background: #09017e;
-  width: 100%;
+  width: 98.75vw;
   color: white;
   display: flex;
   flex-direction: column;
+  /* border: 1px solid red; */
 }
 
 .footer * {

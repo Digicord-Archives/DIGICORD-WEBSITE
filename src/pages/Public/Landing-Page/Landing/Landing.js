@@ -10,7 +10,7 @@ import Landingsection6 from '../Section/Landing_section6/Landingsection6';
 
 const Landing = () => {
   return (
-   <Container style={{marginTop:'-115px', padding: '0px', marginRight: '0px', marginLeft: '0px'}}>
+   <Container style={{marginTop:'-115px', padding: '0px', marginRight: '0px', marginLeft: '0px', width: '98.75vw'}}>
       <Landingsection1/>
       <Landingsection2/>
       <Landingsection6/>
