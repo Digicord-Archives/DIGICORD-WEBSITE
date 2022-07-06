@@ -1,6 +1,6 @@
 import React from 'react'
 import './Landingsection3.css';
-import Airbnb from '../../../../assets/images/Airbnb.png'
+import Airbnb from '../../../../../assets/images/Airbnb.png'
 const Landingsection3 = () => {
   return (  
     <div className='Section3'>

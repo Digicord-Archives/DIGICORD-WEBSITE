@@ -1,8 +1,8 @@
 import React from 'react';
 import './landingsection2.css'
-import image1 from './../../../../assets/images/rafiki.png';
-import image2 from './../../../../assets/images/undraw_domain_names_re_0uun 1.png';
-import image3 from './../../../../assets/images/pana.png';
+import image1 from './../../../../../assets/images/rafiki.png';
+import image2 from './../../../../../assets/images/undraw_domain_names_re_0uun 1.png';
+import image3 from './../../../../../assets/images/pana.png';
 
 const Landingsection2 = () => {
   return (
