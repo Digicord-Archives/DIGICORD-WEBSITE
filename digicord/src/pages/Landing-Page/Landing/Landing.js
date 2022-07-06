@@ -7,10 +7,12 @@ import Landingsection4 from '../Section/Landing_section4/Landingsection4';
 import { Container } from 'react-bootstrap';
 import './Landing.css';
 import Landingsection6 from '../Section/Landing_section6/Landingsection6';
+import ModalComp from '../../../components/modal/ModalComp';
 
 const Landing = () => {
   return (
    <Container style={{marginTop:'-115px', padding: '0px', marginRight: '0px', marginLeft: '0px'}}>
+      <ModalComp />
       <Landingsection1/>
       <Landingsection2/>
       <Landingsection6/>
