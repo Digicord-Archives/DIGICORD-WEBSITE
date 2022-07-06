@@ -14,11 +14,12 @@ const MainSidebar = ({ isOpen, setIsOpen }) => {
   const sidebarRef = useRef(null);
 
   useEffect(() => {
-    if (isOpen) {
-      sidebarRef.current.style.width = "17.5rem";
-    } else {
-      sidebarRef.current.style.width = "0px";
-    }
+    if (window.innerWidth <= 900)
+      if (isOpen && window.innerWidth <= 900) {
+        sidebarRef.current?.classList.add("sidebarOpen")
+      } else {
+        sidebarRef.current?.classList.remove("sidebarOpen")
+      }
   }, [isOpen]);
 
   return (

@@ -13,7 +13,7 @@ import "./Index.styles.scss";
 
 const UserDashboard = () => {
   const navigate = useNavigate();
-  const menuRef = useRef(null)
+  const menuRef = useRef(null);
   const [header, setHeader] = useState("");
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,23 +21,29 @@ const UserDashboard = () => {
     navigate(-1);
   };
 
-  useEffect(()=>{
-    if(isOpen){
-        menuRef.current.style.color = "white"
+  useEffect(() => {
+    if (isOpen) {
+      menuRef.current.style.color = "white";
     } else {
-        menuRef.current.style.color = "#047d36"
+      menuRef.current.style.color = "#047d36";
     }
-  }, [isOpen])
+  }, [isOpen]);
+
 
   return (
     <div className="userDashboardLayout">
-      <MainSidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+      <MainSidebar
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+      />
       <div className="userDashboardMainPanel">
         <div className="userDashboardMobileHeader">
-          <button ref={menuRef} className="menuToggler" onClick={() => setIsOpen(!isOpen)}>
-            {
-                isOpen ? <AiOutlineClose /> : <HiOutlineMenuAlt2 />
-            }
+          <button
+            ref={menuRef}
+            className="menuToggler"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <AiOutlineClose /> : <HiOutlineMenuAlt2 />}
           </button>
           <button className="backButton" onClick={handleBackButton}>
             <BsArrowLeftSquare />
