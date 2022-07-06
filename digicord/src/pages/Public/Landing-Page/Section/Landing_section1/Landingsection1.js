@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container, Row, Col, Button} from 'react-bootstrap';
-import pic1 from '../../../../assets/images/pic1.png';
+import pic1 from '../../../../../assets/images/pic1.png';
 
 const Landingsection1 = () => {
   return (

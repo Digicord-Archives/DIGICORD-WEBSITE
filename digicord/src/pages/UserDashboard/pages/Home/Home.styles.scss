@@ -1,0 +1,50 @@
+.userHome {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 900px) {
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  .imageWrapper {
+    width: 20.75rem;
+    margin-left: 4rem;
+    margin-right: -2rem;
+
+    @media screen and (max-width: 900px) {
+      margin: 0;
+      margin-right: -2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      min-width: 8.5rem;
+      width: 12rem;
+      margin: 0;
+    }
+  }
+
+  .welcomeText {
+    h1 {
+      font-size: 2.5rem;
+      color: #212529;
+      width: 19.75rem;
+
+      @media screen and (max-width: 900px) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        width: 12rem;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 0.875rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
