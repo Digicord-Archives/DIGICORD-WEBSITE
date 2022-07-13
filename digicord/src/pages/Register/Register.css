@@ -1,0 +1,172 @@
+.register-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.register-form{
+    margin: 0 auto;
+    width: 375px;
+    height: 995px;
+    display: flex;
+    justify-content: left;
+    padding: 2px;
+    flex-flow: column;
+}
+
+.register-form h2{
+    margin-top: 36px;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+.signup-form-labels{
+    text-align: left;
+    margin-left: 21px;
+    display: block;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #212529;
+    line-height: 20px;
+    height: 20px;
+}
+
+.signup-form-inputs-placeholder{
+    display: block;
+    width: 334px;
+    margin: 0 auto;
+    height: 50px;
+    outline: none;
+    border: 1px solid #9DA4A8;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.age-sex-container input{
+    display: inline-block;
+    margin-left: 20px;
+}
+.age-sex-container div{
+    width: 162px;
+}
+
+.age-sex-container{
+    display: flex;
+    justify-content: space-between;
+}
+.age-sex-container label{
+    display: block;
+    width: 42px;
+}
+
+.age-sex-container input[id='age']{
+    width: 175px;
+    margin-right: 25px;
+}
+
+.age-sex-container input[id='sex']{
+    width: 120px;
+    margin-right: 4px;
+}
+
+.age-sex-container input[id='sex']{
+    width: 122px;
+}
+
+
+input[class='signup-form-inputs-placeholder']::placeholder{
+    font-family: 'Roboto';
+    font-size: small;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 2px;
+}
+
+.create-button{
+    color: #FFFFFF;
+    font-weight: 700px;
+    font-family: 'Roboto';
+    font-size: larger;
+    background-color: #047D36;
+    display: block;
+    margin: 8px auto;
+    width: 334px;
+    height: 50px;
+    border: 1px solid #9DA4A8;
+    border-radius: 5px;
+}
+
+.create-button-doctor{
+    color: #FFFFFF;
+    font-weight: 700px;
+    font-family: 'Roboto';
+    font-size: larger;
+    background-color: #09017E;
+    display: block;
+    margin: 8px auto;
+    width: 334px;
+    height: 50px;
+    border: 1px solid #9DA4A8;
+    border-radius: 5px;
+}
+
+.account-signin{
+    font-size: small;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.account-signin a{
+    color: #047D36;
+}
+
+.account-signin-doctor a{
+    font-size: small;
+    text-align: center;
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #09017E;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.terms-and-condition{
+    width: 341px;
+    margin: 30px auto;
+    font-family: 'Roboto';
+    font-size: small;
+    height: 30px;
+}
+
+.signup-form-inputs-doctor{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    height: 50px;
+    outline: none;
+    border: 1px solid #9DA4A8;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.terms-and-condition a{
+    text-decoration: none;
+    color: #047D36;
+    text-align: center;
+}
+
+.terms-and-condition-doctor{
+    width: 341px;
+    margin: 30px auto;
+    font-family: 'Roboto';
+    font-size: small;
+    height: 30px;
+}
+
+.terms-and-condition-doctor a{
+    text-decoration: none;
+    color: #09017E;
+    text-align: center;
+}
