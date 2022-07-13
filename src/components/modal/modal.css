@@ -1,0 +1,14 @@
+
+.modalHeader{
+    border-bottom: 0 none;
+}
+
+.patientButton{
+    background-color:#047D36;
+    box-shadow: 0px 6px 12px rgba(4, 125, 54, 0.06), 0px 6px 12px rgba(4, 125, 54, 0.1);
+}
+
+.doctorButton{
+    background-color: #09017E;
+    box-shadow: 0px 6px 12px rgba(4, 125, 54, 0.06), 0px 6px 12px rgba(4, 125, 54, 0.1);
+}
