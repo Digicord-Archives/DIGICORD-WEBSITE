@@ -192,12 +192,12 @@ const MobileNavbar = ({ mobileNavbarRef, isOpen, setIsOpen }) => {
       </div>
       <div className="navbar-actions">
         <div className="btn-wrapper">
-          <Link to="/" className="login">
+          <Link to="/login" className="login">
             Login
           </Link>
         </div>
         <div className="btn-wrapper">
-          <Link to="/" className="signup">
+          <Link to="/register" className="signup">
             Sign Up
           </Link>
         </div>
