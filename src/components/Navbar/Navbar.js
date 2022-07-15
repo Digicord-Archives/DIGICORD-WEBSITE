@@ -5,6 +5,8 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import { FiSearch } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 
+import ModalComp from "../modal/ModalComp"
+
 import Logo from "../../assets/images/logo.png";
 
 import "./Navbar.css";
@@ -16,6 +18,10 @@ const Navbar = () => {
   const searchWrapperRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   useEffect(() => {
     if (isOpen) {
       mobileNavbarRef.current.style.padding = "1.5rem 1.5rem 4rem 1.5rem";
@@ -110,13 +116,15 @@ const Navbar = () => {
 
         <div className="navbar-actions">
           <div className="btn-wrapper">
-            <Link to="/" className="login">
+            <Link to="/" className="login" onClick={handleShow}>
               Login
+              {show && <ModalComp show={show} setShow={setShow} text= "Login"/>}
             </Link>
           </div>
           <div className="btn-wrapper">
-            <Link to="/" className="signup">
+            <Link to="/" className="signup" onClick={handleShow}>
               Sign Up
+              {show && <ModalComp show={show} setShow={setShow} text= "Sign Up"/>}
             </Link>
           </div>
         </div>
