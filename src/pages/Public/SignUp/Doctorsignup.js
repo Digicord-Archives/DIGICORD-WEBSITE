@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import {toast} from 'react-toastify'
 import axios from 'axios'
-
+import './SignUp.css'
 
 
 
@@ -46,55 +46,62 @@ const Doctorsignup = () => {
 	
   return (
     <div>
-    <div class="bg-blue h-100">
+		<div className='signup-container doctor'>
 
-	<div class="pv4 mid-gray sans-serif">
-		<div class="w-90 w-80-m w-50-l center cf cover bg-top bg-center shadow-1 bg-light-gray">
+			<div className='form-container'>
+					<h1 style={{ fontSize: '2.5em', fontWeight: '700', lineHeight: '80px', color: '#060074', fontStyle: 'normal' }}>Create an Account</h1>
+				<form id="register-form" action="" style={{ width: '100%' }}  onSubmit={submitform}>
+					<div className='house'>
+						<label for="" className='label'>Firstname</label>
+						<input name="first_name" type="text" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray " value={first_name} onChange={handleChange} placeholder='Enter your First Name' className='input-container'/>
+					</div>
+					<div className='house'>
+						<label for="" className='label'>Lastname</label>
+						<input name="last_name" type="text" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray " value={last_name} onChange={handleChange} placeholder='Enter your Last Name' className='input-container'/>
+					</div>
+					<div className='house'>
+						<label for="" className='label'>Email</label>
+						<input name="email" type="email" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={email} onChange={handleChange} placeholder='Enter Email' className='input-container'/>
+					</div>
+					<div className='house'>
+						<label for="" className='label'>Password</label>
+						<input name="password" type="password" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={password} onChange={handleChange} placeholder='Enter Password' className='input-container'/>
+					</div>
+					<div className='house'>
+						<label for="" className='label'>Comfirm Password </label>
+						<input name="confirmPassword" type="password" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={confirmPassword} onChange={handleChange} placeholder='Confirm Password' className='input-container'/>
+					</div>
+					<div className='age-container'>
+						<div  className='age'>
+							<label htmlFor="" className='label'>LOCATION</label>
+							<input name="sex" type="text" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={location} onChange={handleChange} className='input-container small' placeholder='Enter your Location'
+						/>
+						</div>
 
-			<div class="w-80 w-70-m w-60-l fr bg-white">
-					<h1 class="b ma0 f3">Sign Up</h1>
-				<form id="register-form" action="" class="ph3 pt3 pb4 f7 flex flex-wrap mr2 items-center justify-center " onSubmit={submitform}>
-					<div class="mb3">
-						<label for="" class="db ttu b lh-copy ">Firstname</label>
-						<input name="first_name" type="text" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray " value={first_name} onChange={handleChange}/>
+						<div className='age'>
+							<label htmlFor="" className='label'>SEX</label>
+							<input name="age" type="text" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={sex} onChange={handleChange} className='input-container small' placeholder='Enter your Sex' />
+						</div>
 					</div>
-					<div class="mb3">
-						<label for="" class="db ttu b lh-copy ">Lastname</label>
-						<input name="last_name" type="text" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray " value={last_name} onChange={handleChange}/>
+					<div className='house'>
+						<label for="" className='label'>Specialization</label>
+						<input name="specialization" type="text" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={specialization} onChange={handleChange} placeholder='Enter Specialization' className='input-container'/>
 					</div>
-					<div class="mb4">
-						<label for="" class="db ttu b lh-copy">Email</label>
-						<input name="email" type="email" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={email} onChange={handleChange}/>
+					<div className='house'>
+						<label for="" className='label'>Phone Number</label>
+						<input name="phone_number" type="phone" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={phone_number} onChange={handleChange} placeholder='Enter Phone Number' className='input-container'/>
 					</div>
-					<div class="mb3">
-						<label for="" class="db ttu b lh-copy">Password</label>
-						<input name="password" type="password" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={password} onChange={handleChange} />
-					</div>
-					<div class="mb3">
-						<label for="" class="db ttu b lh-copy">Comfirm Password </label>
-						<input name="confirmPassword" type="password" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={confirmPassword} onChange={handleChange} />
-					</div>
-					<div class="mb4">
-						<label for="" class="db ttu b lh-copy">Sex</label>
-						<input name="sex" type="sex" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={sex} onChange={handleChange} />
-					</div>
-					<div class="mb3">
-						<label for="" class="db ttu b lh-copy">Specialization</label>
-						<input name="specialization" type="text" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={specialization} onChange={handleChange}/>
-					</div>
-					<div class="mb3">
-						<label for="" class="db ttu b lh-copy">Phone Number</label>
-						<input name="phone_number" type="phone" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={phone_number} onChange={handleChange} />
-					</div>
-					<div class="mb4">
-						<label for="" class="db ttu b lh-copy">Location</label>
-						<input name="location" type="text" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={location} onChange={handleChange} />
-					</div>
-					<div class="mb3 tc f6">
-					<input type="submit" value="Sign Up" class="ttu bn pv3 ph4 f6 bg-blue white b br-pill pointer grow" />
-						<div class="tc">
+				
+					<div className='house'>
+					<input type="submit" value="Create an Account"	className='input-container submit doctor-s'/>
+						<div  style={{
+								display:'flex', justifyContent: 'center', textAlign: 'center', marginTop: '0.5em', width: '100%', marginBottom: '0'
+						}}>
 		
-						Do you have an account? <a href="h" class="blue ph1">Log In Now!</a>
+					<p  style={{
+							textDecoration: 'underline', color: 'black', fontSize: '0.8rem'
+						}}>	Already have an account?</p>
+						 <a href="/#" style={{ textDecoration: 'none', fontSize: '0.85rem', color: '#060074' }}>Sign In</a>
 					</div>
 					</div>
 					
@@ -102,9 +109,6 @@ const Doctorsignup = () => {
 			</div>
 		</div>
 	</div>
-
-</div>
-    </div>
   )
 }
 

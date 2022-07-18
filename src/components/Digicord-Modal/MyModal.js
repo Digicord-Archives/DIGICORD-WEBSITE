@@ -1,13 +1,9 @@
 import React from 'react'
-// import Modal from "react-bootstrap/Modal";
-// import "bootstrap/dist/css/bootstrap.min.css";
-import { Button } from 'react-bootstrap';
-import './modal.css'
-import { MdOutlineCancel } from 'react-icons/md'
 import ReactDOM from 'react-dom';
-// import{Link} from 'react-router-dom'
+import { Button } from 'react-bootstrap';
+import { MdOutlineCancel } from 'react-icons/md'
 
-const ModalComp = (props) => {
+export const MyModal = (props) => {
   if(!props.open) return null
   return ReactDOM.createPortal (
    <>
@@ -24,15 +20,15 @@ const ModalComp = (props) => {
                 margin: '0em 0em 0.35em 0em',
                 color: '#212529'
               }}>
-                Login As:
+                Sign Up As:
               </h1>
               <Button variant="success" style={{ borderRadius: '10px', padding: '0.75em 0 0.75em 0', fontSize: '1.1rem', width: '100%', backgroundColor: '#008037', color: 'white', border: '2px solid #008037' , margin: '0.6em 0 0.6em 0'}} size="lg">
-                <a href={props.patientLogin} style={{ textDecoration: 'none', color: 'white', fontWeight: '700'}}>
+                <a href={props.patientLink} style={{ textDecoration: 'none', color: 'white', fontWeight: '700'}}>
                 PATIENT
                 </a>
             </Button>
             <Button variant="primary" style={{ borderRadius: '10px', padding: '0.75em 0 0.75em 0', fontSize: '1.1rem', width: '100%', backgroundColor: '#060074', color: 'white', border: '2px solid #060074' , margin: '0.6em 0 0.6em 0'}} size="lg">
-              <a href={props.doctorLogin} style={{ textDecoration: 'none', color: 'white', fontWeight: '700'}} >
+              <a href={props.doctorLink} style={{ textDecoration: 'none', color: 'white', fontWeight: '700'}} >
               DOCTOR
               </a>
             </Button>
@@ -43,5 +39,3 @@ const ModalComp = (props) => {
    document.getElementById('portal')
   )
 }
-
-export default ModalComp

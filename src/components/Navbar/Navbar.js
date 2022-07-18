@@ -5,11 +5,13 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import { FiSearch } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 
-import ModalComp from "../modal/ModalComp"
+// import ModalComp from "../modal/ModalComp"
 
 import Logo from "../../assets/images/logo.png";
 
 import "./Navbar.css";
+import { MyModal } from "../Digicord-Modal/MyModal";
+import ModalComp from "../modal/ModalComp";
 
 const Navbar = () => {
   console.log(window.innerWidth)
@@ -18,9 +20,10 @@ const Navbar = () => {
   const searchWrapperRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const [show, setShow] = useState(false);
+  const [IsModalOpen, setIsModalOpen] = useState(false);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
 
   useEffect(() => {
     if (isOpen) {
@@ -116,16 +119,17 @@ const Navbar = () => {
 
         <div className="navbar-actions">
           <div className="btn-wrapper">
-            <Link to="/" className="login" onClick={handleShow}>
-              Login
-              {show && <ModalComp show={show} setShow={setShow} text= "Login"/>}
-            </Link>
+          <Link to="/#" className="login" onClick={() => setIsModalOpen(true)}>
+            Login
+          </Link>
+           <ModalComp open={IsModalOpen} onClose={() => setIsModalOpen(false)} doctorLogin='/login_d' patientLogin='/login_p' />
           </div>
+
           <div className="btn-wrapper">
-            <Link to="/" className="signup" onClick={handleShow}>
-              Sign Up
-              {show && <ModalComp show={show} setShow={setShow} text= "Sign Up"/>}
-            </Link>
+          <Link to="/#" className="signup" onClick={() => setIsModalOpen(true)}>
+            Sign Up
+          </Link>
+           <MyModal open={IsModalOpen} onClose={() => setIsModalOpen(false)} doctorLink='/signup_d' patientLink='/signup_p' />
           </div>
         </div>
       </div>
