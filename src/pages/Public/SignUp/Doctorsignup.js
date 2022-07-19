@@ -103,6 +103,7 @@ const Doctorsignup = () => {
 						}}>	Already have an account?</p>
 						 <a href="/#" style={{ textDecoration: 'none', fontSize: '0.85rem', color: '#060074' }}>Sign In</a>
 					</div>
+					<p style={{ margin: '0.5em 0em', fontSize: '0.9rem', alignSelf: 'center' }}>By logging in, you agree to Digicord's Terms of Use and Privacy Policy.</p>
 					</div>
 					
 				</form>

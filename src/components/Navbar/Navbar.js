@@ -22,6 +22,7 @@ const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   // const [show, setShow] = useState(false);
   const [IsModalOpen, setIsModalOpen] = useState(false);
+  const [IsLoginModalOpen, setIsLoginModalOpen] = useState(false);
   // const handleClose = () => setShow(false);
   // const handleShow = () => setShow(true);
 
@@ -119,10 +120,10 @@ const Navbar = () => {
 
         <div className="navbar-actions">
           <div className="btn-wrapper">
-          <Link to="/#" className="login" onClick={() => setIsModalOpen(true)}>
+          <Link to="/#" className="login" onClick={() => setIsLoginModalOpen(true)}>
             Login
           </Link>
-           <ModalComp open={IsModalOpen} onClose={() => setIsModalOpen(false)} doctorLogin='/login_d' patientLogin='/login_p' />
+           <ModalComp opened={IsLoginModalOpen} onClosed={() => setIsLoginModalOpen(false)} doctorLogin='/login_d' patientLogin='/login_p' />
           </div>
 
           <div className="btn-wrapper">

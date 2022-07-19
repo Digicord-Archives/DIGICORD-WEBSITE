@@ -8,14 +8,14 @@ import ReactDOM from 'react-dom';
 // import{Link} from 'react-router-dom'
 
 const ModalComp = (props) => {
-  if(!props.open) return null
+  if(!props.opened) return null
   return ReactDOM.createPortal (
    <>
     <div style={{ position: 'fixed', top: '0', left: '0', right: '0', bottom: '0', backgroundColor: 'rgba(0, 0, 0, 0.4)', zIndex: '1000' }}>
       <div style={{position: 'fixed', top: '15%', left: '33.5%', backgroundColor: '#F6FDFF', padding: '1.8125em 3.1875em 1.5625em', zIndex: '1000', color: 'black', borderRadius: '8px', height: '350px', width: '33%'}}>
           <div style={{ display: 'flex',flexDirection: 'column',justifyContent: 'center',alignItems: 'center', height: '300px' }}>
             <div style={{display: 'flex', justifyContent: 'flex-end', textAlign: 'end', width: '100%', fontSize: '1.5rem'}}>
-                <MdOutlineCancel onClick={props.onClose} />
+                <MdOutlineCancel onClick={props.onClosed} />
               </div>
               <h1 style={{
                 fontWeight: '700',
