@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import './Appointment.style.css'
 
 const Appointment = ({ setHeader }) => {
   useEffect(() => {
