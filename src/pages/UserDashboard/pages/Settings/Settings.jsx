@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 
-const Settinfgs = ({ setHeader }) => {
+const Settings = ({ setHeader }) => {
   useEffect(() => {
-    setHeader(<h1>Settinfgs</h1>);
+    setHeader(<h1>Settings</h1>);
   }, [setHeader]);
-  return <div>Settinfgs</div>;
+  return <div>Settings</div>;
 };
 
-export default Settinfgs;
+export default Settings;
