@@ -43,12 +43,18 @@
   line-height: 25px;
   font-size: 0.9rem;
   font-weight: 400;
-  text-transform: capitalize;
-  padding: 0.8em 0 0.8em 0;
-  color: lightgrey;
+  padding: 0.8em 0 0.8em 0.5em;
+  color: grey;
   border: 1px solid lightgrey;
   background: transparent;
   width: 100%;
+  border-radius: 8px;
+}
+
+.input-container:hover, .input-container:active {
+  outline: none;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
 }
 
 .small {

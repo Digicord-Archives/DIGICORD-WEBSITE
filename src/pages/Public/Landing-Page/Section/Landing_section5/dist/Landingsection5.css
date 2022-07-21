@@ -3,22 +3,15 @@
   height: 260px;
   padding: 2em 0;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   color: white;
   margin: 0;
 }
 
 h1 {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -33,12 +26,8 @@ h1 {
   width: 70%;
   max-width: 616px;
   gap: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 1em;
   border-radius: 8px;
   background-color: navy;
@@ -49,7 +38,7 @@ h1 {
   width: 65%;
   padding: 1.2em 0 1.2em 1em;
   border-radius: 10px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   margin: -0.5em 0 0 0;
   font-weight: 500;
@@ -71,10 +60,9 @@ h1 {
   border: 1px solid white;
   padding: 0.6em 0 1.8em 0;
   margin: -0.375em 0 0 0;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   line-height: 20px;
 }
-/*# sourceMappingURL=Landingsection5.css.map */

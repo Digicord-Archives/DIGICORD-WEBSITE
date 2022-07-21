@@ -38,7 +38,7 @@ const Doctorsignup = () => {
 	  }).then((response)=>{
 		setUser(response.data);
 		toast.success(`Welcome ${response.data.first_name}`);
-	setTimeout(()=>navigate('/user'),500);
+	setTimeout(()=>navigate('/doctor'),500);
 	  }).catch((err)=>toast.error(err.response.data.msg));
 	  } 
 	}
@@ -74,13 +74,13 @@ const Doctorsignup = () => {
 					<div className='age-container'>
 						<div  className='age'>
 							<label htmlFor="" className='label'>LOCATION</label>
-							<input name="sex" type="text" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={location} onChange={handleChange} className='input-container small' placeholder='Enter your Location'
+							<input name="location" type="text" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={location} onChange={handleChange} className='input-container small' placeholder='Enter your Location'
 						/>
 						</div>
 
 						<div className='age'>
 							<label htmlFor="" className='label'>SEX</label>
-							<input name="age" type="text" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={sex} onChange={handleChange} className='input-container small' placeholder='Enter your Sex' />
+							<input name="sex" type="text" class="input-reset w-100 mw-100 bn br1 pa2 bg-light-gray" value={sex} onChange={handleChange} className='input-container small' placeholder='Enter your Sex' />
 						</div>
 					</div>
 					<div className='house'>

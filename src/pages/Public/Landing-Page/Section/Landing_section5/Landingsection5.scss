@@ -3,16 +3,10 @@
   height: 260px;
   padding: 2em 0;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
+  // border: 1px solid red;
   color: white;
   margin: 0;
 }
@@ -33,19 +27,15 @@ h1 {
   width: 70%;
   max-width: 616px;
   gap: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 1em;
   border-radius: 8px;
   background-color: navy;
   color: white;
 }
 
-.input-class {
+.input-class{
   width: 65%;
   padding: 1.2em 0 1.2em 1em;
   border-radius: 10px;
@@ -57,13 +47,15 @@ h1 {
   line-height: 20px;
   color: white;
   background-color: transparent;
+  // border: 1px solid red;
+
 }
 
 .input:hover, .input:active {
   outline: none;
 }
 
-.submit {
+.submit{
   width: 35%;
   height: 100%;
   color: navy;
@@ -77,4 +69,3 @@ h1 {
   font-size: 1rem;
   line-height: 20px;
 }
-/*# sourceMappingURL=Landingsection5.css.map */
