@@ -3,15 +3,13 @@ select {
   border: 1px solid #008037;
   border-radius: 8px;
   padding: 0.625em 1.25em;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 20px;
   color: #212529;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   height: 100%;
   width: 100%;
   margin-left: 1em;
@@ -35,36 +33,22 @@ select {
   height: 2em;
   border-radius: 8px;
   border: 1px solid #9DA4A8;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-top: 0.5em;
 }
 
 .subtitle {
   width: 100%;
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .subtitle h3 {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 1.5rem;
@@ -90,7 +74,7 @@ option {
   gap: 10px;
   height: 100px;
   width: 80%;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
@@ -109,11 +93,6 @@ option {
   gap: 142px;
   height: 60px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-/*# sourceMappingURL=Appointment.style.css.map */

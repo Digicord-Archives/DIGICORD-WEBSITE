@@ -5,6 +5,8 @@ import axios from 'axios'
 import '../SignUp/SignUp.css'
 import { FcGoogle } from 'react-icons/fc'
 import { FaFacebook } from 'react-icons/fa'
+import { Link } from "react-router-dom";
+
 
 
 const Patientsignin = () => {
@@ -74,11 +76,11 @@ const Patientsignin = () => {
       </div>
 
       <div className='house'>
-        <label  className='label' for="email-address">EMAIL</label>
+        <label  className='label' htmlFor="email-address">EMAIL</label>
         <input type="email" name="email"  id="email-address" onChange={handleChange} placeholder='Enter Email' className='input-container'/>
       </div>
       <div className='house'>
-        <label  className='label' for="password">PASSWORD</label>
+        <label  className='label' htmlFor="password">PASSWORD</label>
         <input type="password" name="password"  id="password" onChange={handleChange} placeholder='Enter Password' className='input-container'/>
       </div>
       <div style={{ width: '100%', height: '50px', margin: '0.5em 0em 0.5em 0em', display: 'flex', justifyContent: 'space-between', color: 'grey' }}>
@@ -86,11 +88,13 @@ const Patientsignin = () => {
             <input type='checkbox' style={{ border: 'lightgrey', borderRadius: '8px' }} /> 
             <p style={{ margin: '0.6em 0em' }}>Remember Me</p>
           </div>
-          <p style={{ margin: '1em 0em' }}>Forgot Password?</p>
+          <Link to="/forgot_p">
+          <p style={{ margin: '1em 0em', color: 'grey' }}>Forgot Password</p>
+          </Link>
       </div>
     </div>
     <div className='house'>
-      <input class="b ph3 pv2 input-reset center ba b--black bg-transparent grow pointer f6 flex" 
+      <input
        className= {formValid?"auth_signup-active":"input-container submit"} type="submit" value="Sign in" disabled={!formValid}/>
        <p style={{ margin: '0.5em 0em', fontSize: '0.9rem', alignSelf: 'center' }}>By logging in, you agree to Digicord's Terms of Use and Privacy Policy.</p>
       </div>
