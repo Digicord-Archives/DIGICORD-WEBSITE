@@ -1,0 +1,133 @@
+.userDashboardLayout {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "Roboto", sans-serif;
+  background: #e4feef;
+}
+
+.userDashboardLayout .userDashboardMainPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7.75rem 10rem 4rem 2rem;
+  background: #e4feef;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-height: 100vh;
+}
+
+.userDashboardLayout .userDashboardMainPanel .userDashboardMobileHeader {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .userDashboardLayout .userDashboardMainPanel .userDashboardMobileHeader {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .userDashboardLayout .userDashboardMainPanel .userDashboardMobileHeader button {
+    background: transparent;
+    border: none;
+    color: #047d36;
+    font-size: 1.25rem;
+  }
+  .userDashboardLayout .userDashboardMainPanel .userDashboardMobileHeader button svg {
+    font-size: 1.25rem;
+  }
+  .userDashboardLayout .userDashboardMainPanel .userDashboardMobileHeader .menuToggler {
+    z-index: 5;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .userDashboardLayout .userDashboardMainPanel {
+    padding: 5.75rem 6rem 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .userDashboardLayout .userDashboardMainPanel {
+    padding: 2rem 3rem 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .userDashboardLayout .userDashboardMainPanel {
+    padding: 2rem 2rem 4rem 2rem;
+  }
+}
+
+.userDashboardLayout .userDashboardMainPanel .userDashboard__header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .userDashboardLayout .userDashboardMainPanel .userDashboard__header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.userDashboardLayout .userDashboardMainPanel .userDashboard__header h1 {
+  color: #047d36;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.25rem;
+}
+
+@media screen and (max-width: 600px) {
+  .userDashboardLayout .userDashboardMainPanel .userDashboard__header h1 {
+    font-size: 1.25rem;
+  }
+}
+
+.userDashboardLayout .userDashboardMainPanel .userDashboard__header button {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  color: #212529;
+  font-size: 1.125rem;
+}
+
+@media screen and (max-width: 900px) {
+  .userDashboardLayout .userDashboardMainPanel .userDashboard__header button {
+    display: none;
+  }
+}
+
+.userDashboardLayout .userDashboardMainPanel .userDashboard__header button svg {
+  font-size: 2rem;
+  height: 2rem;
+}
+/*# sourceMappingURL=Index.styles.css.map */
