@@ -1,0 +1,150 @@
+.mainSidebarWrapper {
+  height: 100vh;
+  min-width: 17.5rem;
+  width: 32rem;
+  background: #047d36;
+  color: #ffffff;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+  .mainSidebarWrapper {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mainSidebarWrapper {
+    min-width: 0px;
+    width: 0px;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.mainSidebarWrapper .mainSidebar {
+  background: url(../../../../assets/images/userDashboardWhite.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 7.5rem 3rem 2rem 2rem;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 1280px) {
+  .mainSidebarWrapper .mainSidebar {
+    padding: 5.5rem 1rem 1rem 1rem;
+  }
+}
+
+.mainSidebarWrapper .mainSidebar .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  padding-right: 5rem;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 1280px) {
+  .mainSidebarWrapper .mainSidebar .profile {
+    gap: 0.75rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.mainSidebarWrapper .mainSidebar .profile__img {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.mainSidebarWrapper .mainSidebar .profile__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mainSidebarWrapper .mainSidebar .profile__details p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.mainSidebarWrapper .mainSidebar .profile__details span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.mainSidebarWrapper .mainSidebar .navigation {
+  padding-bottom: 3.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.mainSidebarWrapper .mainSidebar .navigation__items {
+  background: transparent;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.mainSidebarWrapper .mainSidebar .navigation__items p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.mainSidebarWrapper .mainSidebar .navigation__items span {
+  font-size: 1.75rem;
+}
+
+.mainSidebarWrapper .mainSidebar .navigation__items span svg {
+  font-size: 1.5rem;
+}
+
+.sidebarOpen {
+  min-width: 17.5rem;
+}
+/*# sourceMappingURL=MainSidebar.styles.css.map */
