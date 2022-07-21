@@ -16,10 +16,6 @@
   margin: 0;
 }
 
-.login-c {
-  height: 800px;
-}
-
 .doctor {
   background-color: #CDCAFD;
 }
@@ -43,20 +39,16 @@
   margin-top: 4.5em;
 }
 
-.login {
-  height: 650px;
-}
-
 .input-container {
   line-height: 25px;
   font-size: 0.9rem;
   font-weight: 400;
-  padding: 0.8em 0 0.8em 0.2em;
+  text-transform: capitalize;
+  padding: 0.8em 0 0.8em 0;
   color: lightgrey;
   border: 1px solid lightgrey;
   background: transparent;
-  width: 99%;
-  border-radius: 7px;
+  width: 100%;
 }
 
 .small {
@@ -128,7 +120,6 @@
   font-weight: 400;
   color: #212529;
   text-transform: capitalize;
-  margin-bottom: 0.35em;
 }
 
 @media (max-width: 768px) {

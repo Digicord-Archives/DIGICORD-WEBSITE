@@ -9,6 +9,7 @@ import Patientsignup from "./SignUp/Patientsignup";
 import Doctorsignup from "./SignUp/Doctorsignup";
 import Patientsignin from "./Login/Patientsignin";
 import Doctorsignin from "./Login/Doctorsignin";
+import PatientForgotPassword from "./Login/PatientForgotPassword";
 
 const Index = () => {
   return (
@@ -16,12 +17,13 @@ const Index = () => {
       <Navbar />
       {/* <Landing /> */}
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path="*" element={<Landing />} />
         <Route path="/signup_d" element={<Doctorsignup />} />
         <Route path="/login_d" element={<Doctorsignin />} />
+        <Route path="/register" element={<SignUp />} />
+        <Route path="/forgot_p" element={<PatientForgotPassword />} />
         <Route path="/login_p" element={<Patientsignin />} />
         <Route path="/signup_p" element={<Patientsignup />} />
-        <Route path="/register" element={<SignUp />} />
       </Routes>
       <Footer />
     </div>

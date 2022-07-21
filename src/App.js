@@ -12,6 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import Patientsignin from "./pages/Public/Login/Patientsignin";
 import Patientsignup from "./pages/Public/SignUp/Patientsignup";
+import PatientForgotPassword from './pages/Public/Login/PatientForgotPassword';
 
 function App() {
   return (
@@ -19,11 +20,12 @@ function App() {
       <BrowserRouter>
       <ToastContainer position='top-center'/>
         <Routes >
-            <Route path="/" element={<Index />} />
+            <Route path="*" element={<Index />} />
             <Route path="/register" element={<SignUp/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/signup_d" element={<Doctorsignup/>} />
             <Route path="/signup_p" element={<Patientsignup/>} />
+            <Route path="/forgot_p" element={<PatientForgotPassword/>} />
             <Route path="/login_d" element={<Doctorsignin/>} />
             <Route path="/login_p" element={<Patientsignin/>} />
             <Route path="user/*" element={<UserDashboard />} />
