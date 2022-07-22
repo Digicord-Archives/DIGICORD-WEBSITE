@@ -5,8 +5,6 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import { FiSearch } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 
-// import ModalComp from "../modal/ModalComp"
-
 import Logo from "../../assets/images/logo.png";
 
 import "./Navbar.css";
