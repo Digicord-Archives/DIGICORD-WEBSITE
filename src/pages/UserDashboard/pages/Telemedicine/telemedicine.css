@@ -1,0 +1,15 @@
+.tele-center{
+
+}
+
+.tele-center > h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #008037;
+
+}

@@ -5,11 +5,10 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import { FiSearch } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 
-import ModalComp from "../modal/ModalComp"
-
 import Logo from "../../assets/images/logo.png";
 
 import "./Navbar.css";
+import AuthButton from "../AuthButton";
 
 const Navbar = () => {
   console.log(window.innerWidth)
@@ -115,18 +114,20 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-actions">
-          <div className="btn-wrapper">
+          {/* <div className="btn-wrapper">
             <Link to="/" className="login" onClick={handleShow}>
               Login
               {show && <ModalComp show={show} setShow={setShow} text= "Login"/>}
             </Link>
-          </div>
-          <div className="btn-wrapper">
+          </div> */}
+          <AuthButton show={show} styled='login' text= 'Login' handleShow={handleShow} setShow={setShow}/>
+          <AuthButton show={show} styled='signup' text= 'Sign up' handleShow={handleShow} setShow={setShow}/>
+          {/* <div className="btn-wrapper">
             <Link to="/" className="signup" onClick={handleShow}>
               Sign Up
               {show && <ModalComp show={show} setShow={setShow} text= "Sign Up"/>}
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <MobileNavbar

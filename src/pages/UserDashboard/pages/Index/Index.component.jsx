@@ -10,6 +10,9 @@ import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 
 import "./Index.styles.scss";
+import Settings from "../Settings/Settings";
+import Telemedicine from "../Telemedicine/Telemedicine";
+import MedicalHygeine from "../Medical/MedicalHygeine";
 
 const UserDashboard = () => {
   const navigate = useNavigate();
@@ -62,6 +65,9 @@ const UserDashboard = () => {
             path="/appointment"
             element={<Appointment setHeader={setHeader} />}
           />
+          <Route path="/settings" element={<Settings setHeader={setHeader}/>}/>
+          <Route path="/telemedicine" element={<Telemedicine setHeader={setHeader}/>}/>
+          <Route path="/medicalHygeine" element={<MedicalHygeine setHeader={setHeader}/>}/>
         </Routes>
       </div>
     </div>
