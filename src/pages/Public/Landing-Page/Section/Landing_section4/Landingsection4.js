@@ -7,7 +7,11 @@ import Patient from '../../../../../assets/images/patient.png';
 const Landingsection4 = () => {
   return (
     <div className='Section4'>
-      <div className='section-container'>
+      <div className='title'>
+        <h1 className='about-header'>A Little Bit <span className='about-header' style={{color: 'navy'}}>About Us</span> </h1>
+        <h6>Digicord is an Electronic Medical record that gives users easy access to quality healthcare and every Health Professional the best tools needed to discharge their duties.</h6>
+      </div>
+      <div className='section-container sec1'>
         <div className='content-container'>
           <h2 className='header h1'>
             FOR DOCTORS

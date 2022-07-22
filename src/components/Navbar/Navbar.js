@@ -8,7 +8,8 @@ import { IoMdClose } from "react-icons/io";
 import Logo from "../../assets/images/logo.png";
 
 import "./Navbar.css";
-import AuthButton from "../AuthButton";
+import { MyModal } from "../Digicord-Modal/MyModal";
+import ModalComp from "../modal/ModalComp";
 
 const Navbar = () => {
   console.log(window.innerWidth)
@@ -17,9 +18,11 @@ const Navbar = () => {
   const searchWrapperRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const [show, setShow] = useState(false);
+  const [IsModalOpen, setIsModalOpen] = useState(false);
+  const [IsLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
 
   useEffect(() => {
     if (isOpen) {
@@ -114,20 +117,19 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-actions">
-          {/* <div className="btn-wrapper">
-            <Link to="/" className="login" onClick={handleShow}>
-              Login
-              {show && <ModalComp show={show} setShow={setShow} text= "Login"/>}
-            </Link>
-          </div> */}
-          <AuthButton show={show} styled='login' text= 'Login' handleShow={handleShow} setShow={setShow}/>
-          <AuthButton show={show} styled='signup' text= 'Sign up' handleShow={handleShow} setShow={setShow}/>
-          {/* <div className="btn-wrapper">
-            <Link to="/" className="signup" onClick={handleShow}>
-              Sign Up
-              {show && <ModalComp show={show} setShow={setShow} text= "Sign Up"/>}
-            </Link>
-          </div> */}
+          <div className="btn-wrapper">
+          <Link to="/#" className="login" onClick={() => setIsLoginModalOpen(true)}>
+            Login
+          </Link>
+           <ModalComp opened={IsLoginModalOpen} onClosed={() => setIsLoginModalOpen(false)} doctorLogin='/login_d' patientLogin='/login_p' />
+          </div>
+
+          <div className="btn-wrapper">
+          <Link to="/#" className="signup" onClick={() => setIsModalOpen(true)}>
+            Sign Up
+          </Link>
+           <MyModal open={IsModalOpen} onClose={() => setIsModalOpen(false)} doctorLink='/signup_d' patientLink='/signup_p' />
+          </div>
         </div>
       </div>
       <MobileNavbar
@@ -201,12 +203,12 @@ const MobileNavbar = ({ mobileNavbarRef, isOpen, setIsOpen }) => {
       </div>
       <div className="navbar-actions">
         <div className="btn-wrapper">
-          <Link to="/" className="login">
+          <Link to="/login" className="login">
             Login
           </Link>
         </div>
         <div className="btn-wrapper">
-          <Link to="/" className="signup">
+          <Link to="/register" className="signup">
             Sign Up
           </Link>
         </div>

@@ -13,6 +13,12 @@ import "./Index.styles.scss";
 import Settings from "../Settings/Settings";
 import Telemedicine from "../Telemedicine/Telemedicine";
 import MedicalHygeine from "../Medical/MedicalHygeine";
+import History from "../History/History";
+import ViewMedicalRecord from '../ViewMedicalRecord/ViewMedicalRecord';
+import Notification from '../Notification/Notification';
+import Reminder from '../Reminder/Reminder';
+import EditProfile from '../EditProfile/EditProfile';
+import Calender from '../Calender/Calender';
 
 const UserDashboard = () => {
   const navigate = useNavigate();
@@ -68,6 +74,13 @@ const UserDashboard = () => {
           <Route path="/settings" element={<Settings setHeader={setHeader}/>}/>
           <Route path="/telemedicine" element={<Telemedicine setHeader={setHeader}/>}/>
           <Route path="/medicalHygeine" element={<MedicalHygeine setHeader={setHeader}/>}/>
+           <Route path="/history" element={<History setHeader={setHeader} />} />
+           <Route path="/notification" element={<Notification setHeader={setHeader} />} /> 
+           <Route path="/reminder" element={<Reminder setHeader={setHeader} />} />
+           <Route path="/records" element={<ViewMedicalRecord setHeader={setHeader} />} />
+           <Route path="/edit-profile" element={<EditProfile setHeader={setHeader} />} />
+           <Route path="/calender" element={<Calender setHeader={setHeader} />} />
+          
         </Routes>
       </div>
     </div>

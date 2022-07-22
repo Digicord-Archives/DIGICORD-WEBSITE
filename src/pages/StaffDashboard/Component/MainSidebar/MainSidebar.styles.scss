@@ -1,0 +1,165 @@
+.staffMainSidebarWrapper {
+  height: 100vh;
+  min-width: 17.5rem;
+  width: 38rem;
+  background: #cdcafd;
+  color: #060074;
+  transition: 0.4s ease-in-out;
+
+  @media screen and (min-width: 900px) and (max-width: 1280px) {
+    width: 30rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    min-width: 0px;
+    width: 0px;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+  }
+
+  .mainSidebar {
+    background: url(../../../../assets/images/staffDashboardBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow: overlay;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 7.5rem 2rem 2rem 2rem;
+    transition: 0.4s ease-in-out;
+
+    &::-webkit-scrollbar {
+      width: 0.375rem;
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 0.5rem;
+    }
+
+    @media screen and (max-width: 1280px) {
+      padding: 5.5rem 1rem 1rem 1rem;
+    }
+
+    &__user {
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      background: transparent;
+      color: #495057;
+      border-radius: 0.5rem;
+      width: 26rem;
+      border: 1px solid #060074;
+      box-shadow: 0px 4px 28px rgba(9, 1, 126, 0.15),
+        0px 2px 4px rgba(9, 1, 126, 0.15);
+
+      .notificationBtn {
+        background-color: transparent;
+        border: none;
+        color: #495057;
+        height: fit-content;
+
+        svg {
+          font-size: 2rem;
+        }
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0 1rem;
+        transition: 0.4s ease-in-out;
+        font-family: "Roboto", sans-serif;
+
+        @media screen and (max-width: 1280px) {
+          gap: 0.75rem;
+          padding-right: 0.5rem;
+        }
+
+        &__img {
+          width: 4.25rem;
+          height: 4.25rem;
+          border-radius: 50%;
+          overflow: hidden;
+          padding: 0.125rem;
+          border: 1px solid #495057;
+        }
+
+        &__details {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          p {
+            font-size: 1.5rem;
+            font-weight: 700;
+          }
+          span {
+            font-size: 0.875rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .navigation {
+      padding-bottom: 3.25rem;
+      padding-left: 8.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 100%;
+
+      @media screen and (max-width: 1280px) {
+        padding-left: 3rem;
+      }
+
+      &__items {
+        background: transparent;
+        border: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+        color: #060074;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        cursor: pointer;
+
+        p {
+          font-size: 1rem;
+          font-weight: 500;
+        }
+        span {
+          font-size: 1.75rem;
+          svg {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidebarOpen {
+  //   width: 17.5rem;
+  min-width: 17.5rem;
+  width: 90vw;
+  max-width: 40rem;
+}

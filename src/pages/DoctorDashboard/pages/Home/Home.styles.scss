@@ -1,0 +1,64 @@
+.doctorHome {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 900px) {
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  .imageWrapper {
+    @media screen and (max-width: 900px) {
+      margin: 0;
+      margin-right: -2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      // min-width: 8.5rem;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .welcomeText {
+    width: 100%;
+    h1 {
+      font-size: 2.5rem;
+      color: #060074;
+      text-align: center;
+
+      @media screen and (max-width: 900px) {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.dashboard__header {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  color: #060074 !important;
+
+  img {
+    width: 3.75rem;
+    height: 3.75rem;
+
+    @media screen and (max-width: 600px) {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
