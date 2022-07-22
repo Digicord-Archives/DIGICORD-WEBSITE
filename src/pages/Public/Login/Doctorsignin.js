@@ -38,7 +38,7 @@ const Doctorsignin = () => {
         setLogin(response.data.message);
       } else {
       toast.success(`Welcome back ${response.data.first_name}`);
-      return  setTimeout(()=>navigate('/user'),1500);
+      return  setTimeout(()=>navigate('/doctor'),1500);
       }
     }).catch((err)=>toast.error(err.response.data.msg))
     
@@ -82,9 +82,9 @@ const Doctorsignin = () => {
         <input type="password" name="password"  id="password" onChange={handleChange} placeholder='Enter Password' className='input-container'/>
       </div>
       <div style={{ width: '100%', height: '50px', margin: '0.5em 0em 0.5em 0em', display: 'flex', justifyContent: 'space-between', color: 'grey' }}>
-          <div style={{ width: '25%', height: '40px', display: 'flex', justifyContent: 'space-between', color: 'grey',margin: '0.5em 0em 0.5em 0em' }}>
+          <div style={{ width: '70%', height: '40px', display: 'flex', justifyContent: 'flex-start', color: 'grey',margin: '0.5em 0em 0.5em 0em' }}>
             <input type='checkbox' style={{ border: 'lightgrey', borderRadius: '8px' }} /> 
-            <p style={{ margin: '0.6em 0em' }}>Remember Me</p>
+            <p style={{ margin: '0.6em 0em 0.6em 0.5em' }}>Remember Me</p>
           </div>
           <p style={{ margin: '1em 0em' }}>Forgot Password?</p>
       </div>
