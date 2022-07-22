@@ -6,12 +6,12 @@ const Landingsection5= () => {
 	return (
 			<>
 			<div className='section5'>
-				<h1>
+				<h1 className='class-h1'>
 						Subscribe To Our Newsletter
 				</h1>
 
 				<div className='Newsletter'>
-					<input  name="email" type="email" className="emails" placeholder="Enter your Email Address"  />
+					<input  name="email" type="email" className="newsletter-email" placeholder="Enter your Email Address"  />
 					<button type="submit" className='submit-class'>Subscribe</button>
 				</div>
 			</div>

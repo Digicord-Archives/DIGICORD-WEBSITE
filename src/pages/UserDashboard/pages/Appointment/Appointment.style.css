@@ -1,4 +1,4 @@
-select {
+.selected {
   background-color: #F0FDF5;
   border: 1px solid #008037;
   border-radius: 8px;
@@ -30,7 +30,7 @@ select {
   border-top-right-radius: 8px;
 }
 
-.icon {
+.iconed {
   width: 2em;
   height: 2em;
   border-radius: 8px;

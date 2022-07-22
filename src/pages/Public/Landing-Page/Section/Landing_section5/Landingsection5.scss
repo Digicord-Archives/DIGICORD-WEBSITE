@@ -11,7 +11,7 @@
   margin: 0;
 }
 
-h1 {
+.class-h1 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -35,7 +35,7 @@ h1 {
   color: white;
 }
 
-.emails{
+.newsletter-email{
   width: 65%;
   padding: 1.2em 0 1.2em 1em;
   border-radius: 10px;
@@ -46,13 +46,17 @@ h1 {
   font-size: 1.2rem;
   line-height: 20px;
   color: white;
+  border: none;
   background-color: transparent;
-  // border: 1px solid red;
-
 }
 
-.emails:hover, .emails:active {
+.newsletter-email::placeholder {
+  color: white;
+}
+
+.newsletter-email:hover, .newsletter-email:active {
   outline: none;
+  border: none;
 }
 
 .submit-class{

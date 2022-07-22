@@ -1,4 +1,4 @@
-.container{
+.mcontainer{
     box-sizing: border-box;
     font-family: 'Roboto';
     font-style: normal;
@@ -20,7 +20,7 @@
     padding-left: 5rem;
 }
 
-.container > p{
+.mcontainer > p{
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
@@ -67,7 +67,7 @@
     
 }
 
-.title{
+.mtitle{
     font-weight: 600;
     font-size: 20px;
     line-height: 20px;
@@ -88,7 +88,7 @@ p{
     color: #212529;
 }
 
-button{
+.mbutton{
     color: #FFFFFF;
     font-weight: 700;
     font-size: 20px;

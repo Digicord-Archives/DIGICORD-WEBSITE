@@ -11,7 +11,7 @@ const Appointment = ({ setHeader }) => {
   const Specialist = () => {
     if (ShowSpecialist === true) {
       return  <div className='select'>
-                <select name="hospital" className="select" id="hospital">
+                <select name="hospital" className="select selected" id="hospital">
                   <option value="Select Specialist" disabled selected>Select Specialist</option>
                   <option value="Dentist">
                     <div className="option">
@@ -26,7 +26,7 @@ const Appointment = ({ setHeader }) => {
                   <option value="General Practitioner">General Practitioner</option>
                 </select>
                 <span className="custom-arrow">
-                  <div className="icon"><IoIosArrowDown style={{color:'black', fontWeight: '600'}} /></div>
+                  <div className="iconed"><IoIosArrowDown style={{color:'black', fontWeight: '600'}} /></div>
                 </span>
             </div>
     }
@@ -47,7 +47,7 @@ const Appointment = ({ setHeader }) => {
     <div className="book">
       <div className="book-container">
         <div className='select'>
-            <select name="hospital" className="select" id="hospital" onClick={() => setShowSpecialist(true)}>
+            <select name="hospital" className="select selected" id="hospital" onClick={() => setShowSpecialist(true)}>
               <option value="Select Hospital" disabled selected>Select Hospital</option>
               <option className="option" value="Ikeja Teaching Hospital">Ikeja Teaching Hospital</option>
               <option value="Garki General Hospital">Garki General Hospital</option>
@@ -59,7 +59,7 @@ const Appointment = ({ setHeader }) => {
               <option value="Zanklyn Hospital">Zanklyn Hospital</option>
             </select>
             <span className="custom-arrow">
-              <div className="icon"><IoIosArrowDown style={{color:'black', fontWeight: '600'}} /></div>
+              <div className="iconed"><IoIosArrowDown style={{color:'black', fontWeight: '600'}} /></div>
             </span>
         </div>
       </div>

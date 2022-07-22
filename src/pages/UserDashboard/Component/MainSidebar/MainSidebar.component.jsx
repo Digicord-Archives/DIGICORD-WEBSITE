@@ -41,7 +41,7 @@ const MainSidebar = ({ isOpen, setIsOpen }) => {
             </span>
             <p>Book an Appointment</p>
           </Link>
-          <Link to="/user/records" className="navigation__items">
+          <Link to="/user/medicalHygeine" className="navigation__items">
             <span>
               <FaFileMedical />
             </span>

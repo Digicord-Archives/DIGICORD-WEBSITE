@@ -8,7 +8,7 @@ const MedicalHygeine = ({setHeader}) => {
   }, [setHeader]);
 
   return (
-    <div className='container'>
+    <div className='mcontainer'>
       <p>Display Information</p>
       <div class="wrapper1">
         <div className="flex">
@@ -28,7 +28,7 @@ const MedicalHygeine = ({setHeader}) => {
       {/* end of first div */}
       {/* start of second div */}
       <div className="wrapper1">
-        <p className="title">BIO DATA</p>
+        <p className="mtitle">BIO DATA</p>
         <div className="wrap">
           <div className="line-info">
             <h5 className='bold'>Name : </h5>
@@ -55,7 +55,7 @@ const MedicalHygeine = ({setHeader}) => {
       {/* end of second div */}
       {/* start of 3rd div */}
       <div className="wrapper1">
-        <p className="title">CLINICALS</p>
+        <p className="mtitle">CLINICALS</p>
           <div className="wrap">
             <p>First Consultation</p>
             <div className="line-info">
@@ -75,7 +75,7 @@ const MedicalHygeine = ({setHeader}) => {
       {/* End of 3rd */}
       {/* start of 4th */}
       <div className="wrapper1">
-      <p className="title">DIAGNOSIS AND TESTS</p>
+      <p className="mtitle">DIAGNOSIS AND TESTS</p>
         <div className="wrap">
           <div className="line-info">
             <h5 className='bold'>Date : </h5>
@@ -96,17 +96,17 @@ const MedicalHygeine = ({setHeader}) => {
       {/* end of 4th */}
       {/* start 0f 5th */}
       <div className="wrapper1">
-        <p className="title">DRUG PRESCRIPTION</p>
+        <p className="mtitle">DRUG PRESCRIPTION</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ratione aspernatur cum atque voluptatum possimus distinctio sequi quidem nostrum earum fuga doloribus iste sunt ipsa, molestiae architecto in neque! Pariatur?</p>
       </div>
-      <button type='submit'>Download</button>
+      <button type='submit' className='mbutton'>Download</button>
       <div className="wrapper1">
-        <p className='title'>Request for medical records</p>
+        <p className='mtitle'>Request for medical records</p>
         <div className="wrapper2">
 
         </div>
         <div className="wrapper2"></div>
-        <button type='submit'>Request for transfer</button>
+        <button type='submit' className='mbutton'>Request for transfer</button>
       </div>
     </div>
   )
