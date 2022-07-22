@@ -10,10 +10,10 @@ const Landingsection5= () => {
 						Subscribe To Our Newsletter
 				</h1>
 
-				<form className='Newsletter'>
-					<input  name="email" type="email" className="input-class" placeholder="Enter your Email Address"  />
-					<button type="submit" className='submit'>Subscribe</button>
-				</form>
+				<div className='Newsletter'>
+					<input  name="email" type="email" className="emails" placeholder="Enter your Email Address"  />
+					<button type="submit" className='submit-class'>Subscribe</button>
+				</div>
 			</div>
 			</>
     )

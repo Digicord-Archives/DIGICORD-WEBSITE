@@ -34,7 +34,7 @@ h1 {
   color: white;
 }
 
-.input-class {
+.emails {
   width: 65%;
   padding: 1.2em 0 1.2em 1em;
   border-radius: 10px;
@@ -48,11 +48,11 @@ h1 {
   background-color: transparent;
 }
 
-.input:hover, .input:active {
+.emails:hover, .emails:active {
   outline: none;
 }
 
-.submit {
+.submit-class {
   width: 35%;
   height: 100%;
   color: navy;
@@ -64,5 +64,6 @@ h1 {
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
+  border-radius: 8px;
   line-height: 20px;
 }
