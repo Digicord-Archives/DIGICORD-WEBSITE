@@ -84,12 +84,12 @@ const Patientsignin = () => {
         <input type="password" name="password"  id="password" onChange={handleChange} placeholder='Enter Password' className='input-container'/>
       </div>
       <div style={{ width: '100%', height: '50px', margin: '0.5em 0em 0.5em 0em', display: 'flex', justifyContent: 'space-between', color: 'grey' }}>
-          <div style={{ width: '70%', height: '40px', display: 'flex', justifyContent: 'flex-start', color: 'grey',margin: '0.5em 0em 0.5em 0em' }}>
+          <div style={{ width: '60%', height: '40px', display: 'flex', justifyContent: 'flex-start', color: 'grey',margin: '0.5em 0em 0.5em 0em'}}>
             <input type='checkbox' style={{ border: 'lightgrey', borderRadius: '8px' }} /> 
-            <p style={{ margin: '0.6em 0em 0.6em 0.5em' }}>Remember Me</p>
+            <p style={{ margin: '0.4em 0em 0.6em 0.5em' }}>Remember Me</p>
           </div>
           <Link to="/forgot_p">
-          <p style={{ margin: '1em 0em', color: 'grey' }}>Forgot Password</p>
+          <p style={{ margin: '0.7em 0em 1em 0em', color: 'grey' }}>Forgot Password? </p>
           </Link>
       </div>
     </div>

@@ -39,16 +39,25 @@
   margin-top: 4.5em;
 }
 
+.login-c {
+  height: 800px;
+}
+
+.login {
+  height: 650px;
+}
+
 .input-container {
   line-height: 25px;
   font-size: 0.9rem;
   font-weight: 400;
   text-transform: capitalize;
-  padding: 0.8em 0 0.8em 0;
+  padding: 0.8em 0 0.8em 0.5em;
   color: lightgrey;
   border: 1px solid lightgrey;
   background: transparent;
   width: 100%;
+  border-radius: 6px;
 }
 
 .small {
@@ -60,11 +69,17 @@
   color: white;
   border-radius: 8px;
   gap: 8px;
+  -webkit-box-shadow: 0px 6px 12px #008037;
+          box-shadow: 0px 6px 12px #008037;
   font-weight: 700;
+  border: 1px solid #008037;
 }
 
 .doctor-s {
   background-color: #060074;
+  border: 1px solid #060074;
+  -webkit-box-shadow: 0px 6px 12px #060074;
+          box-shadow: 0px 6px 12px #060074;
 }
 
 .house {
@@ -120,6 +135,7 @@
   font-weight: 400;
   color: #212529;
   text-transform: capitalize;
+  margin-bottom: 0.3em;
 }
 
 @media (max-width: 768px) {
