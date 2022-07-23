@@ -1,0 +1,151 @@
+.staffDashboardLayout {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "Roboto", sans-serif;
+  background: #f2f1fc;
+}
+
+.staffDashboardLayout .staffDashboardMainPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 6rem 2rem 4rem 2rem;
+  background: #ffffff;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-height: 100vh;
+}
+
+.staffDashboardLayout .staffDashboardMainPanel .staffDashboardMobileHeader {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .staffDashboardLayout .staffDashboardMainPanel .staffDashboardMobileHeader {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .staffDashboardLayout .staffDashboardMainPanel .staffDashboardMobileHeader button {
+    background: transparent;
+    border: none;
+    color: #495057;
+    font-size: 1.25rem;
+  }
+  .staffDashboardLayout .staffDashboardMainPanel .staffDashboardMobileHeader button svg {
+    font-size: 2rem;
+  }
+  .staffDashboardLayout .staffDashboardMainPanel .staffDashboardMobileHeader .menuToggler {
+    z-index: 5;
+  }
+  .staffDashboardLayout .staffDashboardMainPanel .staffDashboardMobileHeader .menuToggler svg {
+    color: #495057;
+    font-size: 2rem;
+  }
+  .staffDashboardLayout .staffDashboardMainPanel .staffDashboardMobileHeader .open svg {
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .staffDashboardLayout .staffDashboardMainPanel {
+    padding: 5.75rem 2rem 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .staffDashboardLayout .staffDashboardMainPanel {
+    padding: 2rem 2rem 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .staffDashboardLayout .staffDashboardMainPanel {
+    padding: 2rem 2rem 4rem 2rem;
+  }
+}
+
+.staffDashboardLayout .staffDashboardMainPanel .staffDashboard__header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 8rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .staffDashboardLayout .staffDashboardMainPanel .staffDashboard__header {
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .staffDashboardLayout .staffDashboardMainPanel .staffDashboard__header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 0;
+  }
+}
+
+.staffDashboardLayout .staffDashboardMainPanel .staffDashboard__header h1 {
+  color: #495057;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.25rem;
+}
+
+@media screen and (max-width: 600px) {
+  .staffDashboardLayout .staffDashboardMainPanel .staffDashboard__header h1 {
+    font-size: 1.25rem;
+  }
+}
+
+.staffDashboardLayout .staffDashboardMainPanel .staffDashboard__header button {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  color: #212529;
+  font-size: 1.125rem;
+}
+
+@media screen and (max-width: 900px) {
+  .staffDashboardLayout .staffDashboardMainPanel .staffDashboard__header button {
+    display: none;
+  }
+}
+
+.staffDashboardLayout .staffDashboardMainPanel .staffDashboard__header button svg {
+  font-size: 2rem;
+  height: 2rem;
+}
+/*# sourceMappingURL=Index.styles.css.map */

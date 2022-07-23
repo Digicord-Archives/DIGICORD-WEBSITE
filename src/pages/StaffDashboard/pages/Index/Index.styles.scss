@@ -1,0 +1,113 @@
+.staffDashboardLayout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  font-family: "Roboto", sans-serif;
+  background: #f2f1fc;
+
+  .staffDashboardMainPanel {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 2rem 4rem 2rem;
+    background: #ffffff;
+    flex-grow: 1;
+    min-height: 100vh;
+
+    .staffDashboardMobileHeader {
+      display: none;
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          background: transparent;
+          border: none;
+          color: #495057;
+          font-size: 1.25rem;
+
+          svg {
+            font-size: 2rem;
+          }
+        }
+
+        .menuToggler {
+          z-index: 5;
+
+          svg {
+            color: #495057;
+            font-size: 2rem;
+          }
+        }
+
+        .open {
+          svg {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1280px) {
+      padding: 5.75rem 2rem 4rem 2rem;
+    }
+
+    @media screen and (max-width: 900px) {
+      padding: 2rem 2rem 4rem 2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      padding: 2rem 2rem 4rem 2rem;
+    }
+
+    .staffDashboard {
+      &__header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 8rem;
+
+        @media screen and (max-width: 1280px) {
+          padding-right: 4rem;
+        }
+
+        @media screen and (max-width: 600px) {
+          justify-content: center;
+          padding-right: 0;
+        }
+        h1 {
+          color: #495057;
+          font-family: "Roboto", sans-serif;
+          font-size: 2.25rem;
+
+          @media screen and (max-width: 600px) {
+            font-size: 1.25rem;
+          }
+        }
+
+        button {
+          height: fit-content;
+          background: transparent;
+          border: none;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          color: #212529;
+          font-size: 1.125rem;
+
+          @media screen and (max-width: 900px) {
+            display: none;
+          }
+
+          svg {
+            font-size: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
